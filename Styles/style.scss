@@ -1,0 +1,168 @@
+@import "variables";
+@import "mixins";
+
+h1 {
+    font-family: "Young Serif";
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: hsl(14, 45%, 36%);
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: hsl(332, 51%, 32%);
+    font-family: Outfit;
+    justify-content: left;
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style-position:outside;
+    padding-left: $paddingFlexContainer;
+    }
+
+p, li, tr {
+    @include textoBase();
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    padding-left: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.bold {
+    color: hsl(14, 45%, 36%);
+}
+  
+.bottomLineVisible {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.bottomLineInvisible {
+    border-bottom: 1px transparent #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+tr:hover td{
+    transition: 0.4s;
+    background-color: hsl(14, 45%, 36%);
+    color: #ddd;
+  }
+
+h1:hover {
+    transition: 0.2s;
+    font-size: 34px;
+}
+
+body {
+    @include flexCenter();
+    background-color: $backgroundColor;
+    position:relative;
+    flex-direction: column;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+        #flexContainer {
+            @include flexCenter();
+            background-color: $contentBoxColor;
+            width: 600px; 
+            height: auto;
+            padding: $paddingFlexContainer;
+            border-radius: 10px;
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+            }
+
+            .line {
+                width: 100%;
+                border-bottom: 1px solid hsl(30, 18%, 87%); 
+              }
+
+            #firstSection {
+                margin-top: $intelineadoSecciones;
+                width: 100%;
+                p {
+                    line-height: $interlineadoInterior;
+                    @include marginTopBottom($interlineadoInterior);
+                }
+                #preparationTime {
+                    line-height: 36px;
+                    background-color: hsl(330, 100%, 98%);
+                    padding: 20px;
+                    border-radius: 10px;
+                }
+            }
+            #ingredientSection {
+                @include marginTopBottom($interlineadoInterior);
+                ul {
+                    @include marginTopBottom(10px);
+                    line-height: $interlineadoInterior;
+                }
+                width: 100%;
+            }
+            #instructionSection {
+                @include marginTopBottom($interlineadoInterior);
+                ol {
+                    @include marginTopBottom(10px);
+                    line-height: $interlineadoInterior;
+                }
+                width: 100%;
+            }
+            #nutritionSection {
+                @include marginTopBottom($interlineadoInterior);
+                table , p{
+                    @include marginTopBottom(10px);
+                    line-height: $interlineadoInterior;
+                }
+                width: 100%;
+            }
+        }
+        
+        #attribution {
+            font-family: Outfit;
+            width: 100%;
+            display: flex;
+            position: absolute;
+            font-size: 11px; 
+            justify-content: center;
+            bottom: 0;
+            a { color: hsl(228, 45%, 44%); }
+        }
+
+
+}
+
+@media screen and (width < 630px) {
+    
+    body {
+        padding: 5%;
+        #flexContainer {
+            width: 100%; 
+            height: auto;
+        }
+    }
+
+}
+

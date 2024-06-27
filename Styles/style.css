@@ -1,0 +1,173 @@
+h1 {
+  font-family: "Young Serif";
+  font-weight: 400;
+  color: hsl(24, 5%, 18%);
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: hsl(14, 45%, 36%);
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  color: hsl(332, 51%, 32%);
+  font-family: Outfit;
+  justify-content: left;
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-position: outside;
+  padding-left: 20px;
+}
+
+p, li, tr {
+  font-family: Outfit;
+  font-weight: 400;
+  justify-content: left;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding-left: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.bold {
+  color: hsl(14, 45%, 36%);
+}
+
+.bottomLineVisible {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.bottomLineInvisible {
+  border-bottom: 1px transparent #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+tr:hover td {
+  transition: 0.4s;
+  background-color: hsl(14, 45%, 36%);
+  color: #ddd;
+}
+
+h1:hover {
+  transition: 0.2s;
+  font-size: 34px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(30, 54%, 90%);
+  position: relative;
+  flex-direction: column;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+body #flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 600px;
+  height: auto;
+  padding: 20px;
+  border-radius: 10px;
+  flex-direction: column;
+}
+body #flexContainer img {
+  width: 100%;
+  border-radius: 10px;
+}
+body #flexContainer .line {
+  width: 100%;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+body #flexContainer #firstSection {
+  margin-top: 35px;
+  width: 100%;
+}
+body #flexContainer #firstSection p {
+  line-height: 25px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+body #flexContainer #firstSection #preparationTime {
+  line-height: 36px;
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px;
+  border-radius: 10px;
+}
+body #flexContainer #ingredientSection {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+body #flexContainer #ingredientSection ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+body #flexContainer #instructionSection {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+body #flexContainer #instructionSection ol {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+body #flexContainer #nutritionSection {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+body #flexContainer #nutritionSection table, body #flexContainer #nutritionSection p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+body #attribution {
+  font-family: Outfit;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  font-size: 11px;
+  justify-content: center;
+  bottom: 0;
+}
+body #attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (width < 630px) {
+  body {
+    padding: 5%;
+  }
+  body #flexContainer {
+    width: 100%;
+    height: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
