@@ -76,6 +76,8 @@ h1:hover {
 body {
     @include flexCenter();
     background-color: $backgroundColor;
+    width: 100%;
+    height: 100%;
     position:relative;
     flex-direction: column;
     padding-top: 5%;
