@@ -14,12 +14,14 @@ h2 {
   padding: 0;
 }
 
-h3 {
+.subtitle {
   color: hsl(332, 51%, 32%);
   font-family: Outfit;
   justify-content: left;
   margin: 0;
   padding: 0;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 ul, ol {
@@ -80,12 +82,19 @@ body {
   justify-content: center;
   align-items: center;
   background-color: hsl(30, 54%, 90%);
+  width: 100%;
+  height: 100%;
   position: relative;
   flex-direction: column;
   padding-top: 5%;
   padding-bottom: 5%;
 }
-body #flexContainer {
+body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main #flexContainer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,60 +105,65 @@ body #flexContainer {
   border-radius: 10px;
   flex-direction: column;
 }
-body #flexContainer img {
+body main #flexContainer img {
   width: 100%;
   border-radius: 10px;
 }
-body #flexContainer .line {
+body main #flexContainer .line {
   width: 100%;
   border-bottom: 1px solid hsl(30, 18%, 87%);
 }
-body #flexContainer #firstSection {
+body main #flexContainer #firstSection {
   margin-top: 35px;
   width: 100%;
 }
-body #flexContainer #firstSection p {
+body main #flexContainer #firstSection .content {
   line-height: 25px;
   margin-top: 25px;
   margin-bottom: 25px;
 }
-body #flexContainer #firstSection #preparationTime {
+body main #flexContainer #firstSection #preparationTime {
   line-height: 36px;
   background-color: hsl(330, 100%, 98%);
   padding: 20px;
   border-radius: 10px;
 }
-body #flexContainer #ingredientSection {
+body main #flexContainer #ingredientSection {
   margin-top: 25px;
   margin-bottom: 25px;
   width: 100%;
 }
-body #flexContainer #ingredientSection ul {
+body main #flexContainer #ingredientSection ul {
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 25px;
 }
-body #flexContainer #instructionSection {
+body main #flexContainer #instructionSection {
   margin-top: 25px;
   margin-bottom: 25px;
   width: 100%;
 }
-body #flexContainer #instructionSection ol {
+body main #flexContainer #instructionSection ol {
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 25px;
 }
-body #flexContainer #nutritionSection {
+body main #flexContainer #nutritionSection {
   margin-top: 25px;
   margin-bottom: 25px;
   width: 100%;
 }
-body #flexContainer #nutritionSection table, body #flexContainer #nutritionSection p {
+body main #flexContainer #nutritionSection table, body main #flexContainer #nutritionSection p {
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 25px;
 }
-body #attribution {
+body footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body footer #attribution {
   font-family: Outfit;
   width: 100%;
   display: flex;
@@ -158,7 +172,7 @@ body #attribution {
   justify-content: center;
   bottom: 0;
 }
-body #attribution a {
+body footer #attribution a {
   color: hsl(228, 45%, 44%);
 }
 
